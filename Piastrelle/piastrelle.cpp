@@ -16,12 +16,12 @@ using namespace std;
 
 ofstream output;
 
-int count(int n) {
+/*int count(int n) {
 
   assert( n >= 0); //AASSERT: PER SCONGIURARE BAD INPUT
 
   if(memo[n] != UNKNOWN) //MEMOIZZAZIONE
-    return memo[n];
+    return memo[n];*/
 
   //casi base
   /*if(n == 0)
@@ -31,12 +31,12 @@ int count(int n) {
   else if(n == 2)
     return 2;*/
   //caso induttivo 
-  memo[n] = count(n-1) + count(n-2); //mod per restituire solo le ultime 6 cifre
+  /*memo[n] = count(n-1) + count(n-2); //mod per restituire solo le ultime 6 cifre
   
   return memo[n];
 
 
-}
+}*/
 
 void stampa(int n, string history) {
 
