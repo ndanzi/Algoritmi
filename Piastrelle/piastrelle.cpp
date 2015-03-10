@@ -12,8 +12,7 @@
 using namespace std;
 
 //MEMOIZZAZIONE
-int memo[MAXN + 1];
-string lines[MAXN + 1];
+//int memo[MAXN + 1];
 
 ofstream output;
 
@@ -66,7 +65,7 @@ int main ()
 {
  
   int n;
-  int out = 0;
+  //int out = 0;
 
   ifstream input;
   string history = "";
@@ -78,14 +77,14 @@ int main ()
 
   input >> n;
 
-  for(int i = 0; i <= MAXN; i++) 
-    memo[i] = UNKNOWN;
+  /*for(int i = 0; i <= MAXN; i++) 
+    memo[i] = UNKNOWN;*/
 
-  memo[0] = 0;
-  memo[1] = 1;
+  //memo[0] = 0;
+  //memo[1] = 1;
 
 
-  out = count(n);
+  //out = count(n);
   stampa(n, history);
 
 
