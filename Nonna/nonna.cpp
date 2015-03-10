@@ -8,7 +8,7 @@
 #define MAXP 1000000
 #define UNKNOWN -1
 
-int memo[2][MAXN+1];
+//int memo[2][MAXN+1];
 
 int min(int n1, int n2) {
     if(n1 < n2) return n1;
@@ -70,11 +70,14 @@ int main() {
     for(i=0; i<N; i++)
         assert(1 == fscanf(fr, "%d", &P[i]));
 
-    //memo = (int**) malloc(sizeof(int*)*(MAXN+1));
-    
+    memo = (int**) malloc(sizeof(int*)*(N+1));
+
+    for(i = 0; i < N+1; i++) {
+      memo[i] = (int*) malloc(sizeof(int)*(K+1));
+    }
     
 
-    for(i = 0; i <= MAXN; i++) {
+    for(i = 0; i <= N; i++) {
       memo[1][i] = UNKNOWN;
     }
 

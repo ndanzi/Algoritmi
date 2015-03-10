@@ -1,16 +1,21 @@
 #include <iostream>
 #include <fstream>
 #include <cassert>
+#include <string>
 
 #define MAXN 1000000
 #define UNKNOWN -1
+#define SING "[O]"
+#define DOUB "[OOOO]"
+#define END "\n"
 
 using namespace std;
 
 //MEMOIZZAZIONE
 int memo[MAXN + 1];
+string lines[MAXN + 1];
 
-//int closed[MAXN + 1], ntime = 0;
+ofstream output;
 
 int count(int n) {
 
@@ -29,9 +34,31 @@ int count(int n) {
   //caso induttivo 
   memo[n] = count(n-1) + count(n-2); //mod per restituire solo le ultime 6 cifre
   
-  //closed[n] = ntime++; 
   return memo[n];
 
+
+}
+
+void stampa(int n, string history) {
+
+  //CONTRATTO: listare una riga per le possibili piastrellature di un corridoio di lunghezza n,
+  // ciascuna prefissata con history
+
+
+  //CASI BASE (quelli in cui ho una scelta sola)
+  if(n == 0) {
+    output << history << END;
+    return;
+  } 
+  if(n == 1) {
+    output << history << SING << END;
+    return;
+  }
+
+  //CASI INDUTTIVI (quelli in cui posso scegliere una piastrella da due o due da uno)
+  stampa(n-1, history + SING);
+  stampa(n-2, history + DOUB);
+  return;
 
 }
 
@@ -40,14 +67,13 @@ int main ()
  
   int n;
   int out = 0;
-  ofstream output;
+
   ifstream input;
+  string history = "";
   
   input.open("input.txt");
   assert(input.is_open());
   output.open("output.txt", ofstream::trunc);
-  //cout << "inserire il numero di piastrelle: ";
-  //cin >> n;
 
 
   input >> n;
@@ -57,18 +83,12 @@ int main ()
 
   memo[0] = 0;
   memo[1] = 1;
-  //closed[0] = closed[1] = ntime++;
+
 
   out = count(n);
+  stampa(n, history);
 
 
-  //cout << "il numero di combinazioni possibili con piastrelle da 1 e da 2 è: " << out << endl;
-
-  //cout << "i\tmemo[i]\tclosed[i]" << endl;
-
-  /*for(int i = 0; i <= n; i++) {
-    cout << i << "\t" << memo[i] << "\t" << closed[i] << endl;
-  }*/
 
 
   

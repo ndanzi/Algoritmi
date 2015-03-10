@@ -1,0 +1,8 @@
+[O][O][O][O][O]
+[O][O][O][OOOO]
+[O][O][OOOO][O]
+[O][OOOO][O][O]
+[O][OOOO][OOOO]
+[OOOO][O][O][O]
+[OOOO][O][OOOO]
+[OOOO][OOOO][O]
