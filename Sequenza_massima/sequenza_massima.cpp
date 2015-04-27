@@ -3,16 +3,16 @@
 #include <cassert>
 #include <climits>
 
-#define MAXN 10000
+#define MAXN 1000000
 
 using namespace std;
 
 int P[MAXN];
 
 int main(int argc, char** argv) {
-	int n;
+  long int n;
   int M = INT_MIN;
-  int max, j;
+  long int max, j;
  
   ifstream input;
   ofstream output;
@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
   for(i = 0; i < n; i++) {
     max = P[i];
     if(max > M) M = max;
-    for(j = i; j < n; j++) {
+    for(j = i+1; j < n; j++) {
       max += P[j];
       if(max > M) M = max;
     }

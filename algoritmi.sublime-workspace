@@ -1,0 +1,640 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"n",
+				"n"
+			],
+			[
+				"show",
+				"showcat"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"categoria",
+				"categoria_bean"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"ar",
+				"articles"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"ca",
+				"categoria"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"arti",
+				"articles"
+			],
+			[
+				"art",
+				"articolo"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"tra",
+				"translateY"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"con",
+				"content"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Jolly jumper/jollyjumper.cpp",
+			"settings":
+			{
+				"buffer_size": 914,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Taglialegna/taglialegna.cpp",
+			"settings":
+			{
+				"buffer_size": 85,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Nonna/nonna.cpp",
+			"settings":
+			{
+				"buffer_size": 1052,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/nicolo/magistrale/Algoritmi",
+		"/home/nicolo/magistrale/Algoritmi/Borse",
+		"/home/nicolo/magistrale/Algoritmi/Jolly jumper",
+		"/home/nicolo/magistrale/Algoritmi/Nonna",
+		"/home/nicolo/magistrale/Algoritmi/Piastrelle2",
+		"/home/nicolo/magistrale/Algoritmi/Sequenza_massima",
+		"/home/nicolo/magistrale/Algoritmi/Taglialegna"
+	],
+	"file_history":
+	[
+		"/home/nicolo/magistrale/Algoritmi/Minato/minato.cpp",
+		"/home/nicolo/magistrale/Algoritmi/Minato/input.txt",
+		"/home/nicolo/magistrale/Algoritmi/Minato/input1.txt",
+		"/home/nicolo/magistrale/Algoritmi/Sequenza_massima/sequenza_massima.cpp",
+		"/home/nicolo/magistrale/Algoritmi/Borse/borse.cpp",
+		"/home/nicolo/magistrale/Algoritmi/Piastrelle2/piastrelle2.cpp",
+		"/home/nicolo/magistrale/Algoritmi/Sequenza_massima/sequenza_massima",
+		"/home/nicolo/magistrale/Algoritmi/Minato/output.txt",
+		"/home/nicolo/.config/sublime-text-3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/home/nicolo/.config/sublime-text-3/Packages/BracketHighlighter/Example.sublime-keymap",
+		"/tmp/sublime-sftp-browse-1426270663/radiosantateresa.it/httpdocs/prova/freaky/ResponsiveRetinaReadyMenu/css/default.css",
+		"/tmp/sublime-sftp-browse-1426184072/radiosantateresa.it/httpdocs/insertArticle.php",
+		"/tmp/sublime-sftp-browse-1426584562/radiosantateresa.it/httpdocs/prova/freaky/css/style.css",
+		"/tmp/sublime-sftp-browse-1426514096/radiosantateresa.it/httpdocs/prova/freaky/ResponsiveRetinaReadyMenu/css/component.css",
+		"/tmp/sublime-sftp-browse-1426498966/gresner/gresner.it/sezione.php",
+		"/tmp/sublime-sftp-browse-1426505037/radiosantateresa.it/httpdocs/prova/freaky/SlidePushMenus/css/component.css",
+		"/tmp/sublime-sftp-browse-1426501539/radiosantateresa.it/httpdocs/prova/freaky/index1.php",
+		"/tmp/sublime-sftp-browse-1426500024/radiosantateresa.it/httpdocs/prova/freaky/DBMS.php",
+		"/tmp/sublime-sftp-browse-1426500008/radiosantateresa.it/httpdocs/prova/freaky/articles_parser.php",
+		"/tmp/sublime-sftp-browse-1426510709/radiosantateresa.it/httpdocs/prova/freaky/index2.php",
+		"/tmp/sublime-sftp-browse-1426511223/radiosantateresa.it/httpdocs/prova/freaky/css/menu.css",
+		"/tmp/sublime-sftp-browse-1426510671/radiosantateresa.it/httpdocs/prova/freaky/OffCanvasMenuEffects/sideslide.html",
+		"/tmp/sublime-sftp-browse-1426512869/radiosantateresa.it/httpdocs/prova/freaky/css/style.css",
+		"/tmp/sublime-sftp-browse-1426529233/radiosantateresa.it/httpdocs/prova/freaky/thefreakytimes.wordpress.2015-03-05.xml",
+		"/tmp/sublime-sftp-browse-1426535643/radiosantateresa.it/httpdocs/prova/freaky/DBMS/DBMS.php",
+		"/tmp/sublime-sftp-browse-1426535720/radiosantateresa.it/httpdocs/prova/freaky/DBMS/CategoriaBean.php",
+		"/tmp/sublime-sftp-browse-1426535720/radiosantateresa.it/httpdocs/prova/freaky/DBMS/ImmagineBean.php",
+		"/tmp/sublime-sftp-browse-1426537027/radiosantateresa.it/httpdocs/prova/freaky/icons/icons.css",
+		"/tmp/sublime-sftp-browse-1426498995/radiosantateresa.it/httpdocs/prova/freaky/index.php",
+		"/tmp/sublime-sftp-browse-1426512196/radiosantateresa.it/httpdocs/prova/freaky/DBMS/DBMS.php",
+		"/tmp/sublime-sftp-browse-1426531117/radiosantateresa.it/httpdocs/prova/freaky/icons/index.html",
+		"/tmp/sublime-sftp-browse-1426531078/radiosantateresa.it/httpdocs/prova/freaky/icons/icons.svg",
+		"/tmp/sublime-sftp-browse-1426534174/radiosantateresa.it/httpdocs/prova/freaky/icons/icons.css",
+		"/home/nicolo/Scaricati/index.html",
+		"/tmp/sublime-sftp-browse-1426503897/radiosantateresa.it/httpdocs/prova/freaky/css/menu.css",
+		"/tmp/sublime-sftp-browse-1426501208/radiosantateresa.it/httpdocs/prova/freaky/SlidePushMenus/index.html",
+		"/home/nicolo/.config/sublime-text-3/Packages/User/sftp_servers/gresner",
+		"/tmp/sublime-sftp-browse-1426266906/radiosantateresa.it/httpdocs/prova/freaky/css/menu.css",
+		"/tmp/sublime-sftp-browse-1426266897/radiosantateresa.it/httpdocs/prova/freaky/css/style.css",
+		"/tmp/sublime-sftp-browse-1426270380/radiosantateresa.it/httpdocs/prova/freaky/ResponsiveRetinaReadyMenu/index.html",
+		"/tmp/sublime-sftp-browse-1426270979/radiosantateresa.it/httpdocs/prova/freaky/ResponsiveRetinaReadyMenu/css/component.css",
+		"/tmp/sublime-sftp-browse-1426276791/radiosantateresa.it/httpdocs/prova/freaky/edmin/login.php",
+		"/tmp/sublime-sftp-browse-1426276450/radiosantateresa.it/httpdocs/prova/freaky/edmin/areaRiservata.php",
+		"/tmp/sublime-sftp-browse-1426266490/radiosantateresa.it/httpdocs/prova/freaky/index.php",
+		"/tmp/sublime-sftp-browse-1426270313/radiosantateresa.it/httpdocs/prova/freaky/ResponsiveRetinaReadyMenu/index.html",
+		"/home/nicolo/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/tmp/sublime-sftp-browse-1426155856/radiosantateresa.it/httpdocs/prova/freaky/DBMS.php",
+		"/tmp/sublime-sftp-browse-1426150196/radiosantateresa.it/httpdocs/prova/freaky/articles_parser.php",
+		"/tmp/sublime-sftp-browse-1426150025/radiosantateresa.it/httpdocs/prova/freaky/thefreakytimes.wordpress.2015-03-05.xml",
+		"/tmp/sublime-sftp-browse-1426167698/radiosantateresa.it/httpdocs/prova/freaky/DBMS/DBMS.php",
+		"/tmp/sublime-sftp-browse-1426167710/radiosantateresa.it/httpdocs/prova/freaky/DBMS/ArticoloBean.php",
+		"/tmp/sublime-sftp-browse-1426168278/radiosantateresa.it/httpdocs/prova/freaky/css/style.css",
+		"/tmp/sublime-sftp-browse-1426168266/radiosantateresa.it/httpdocs/prova/freaky/css/menu.css",
+		"/tmp/sublime-sftp-browse-1426149468/radiosantateresa.it/httpdocs/prova/freaky/index.php",
+		"/tmp/sublime-sftp-browse-1426184040/radiosantateresa.it/httpdocs/homepage.php",
+		"/home/nicolo/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/home/nicolo/.config/sublime-text-3/Packages/User/sftp_servers/radiosantateresa.it"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"passo",
+			"width",
+			"z-in",
+			"main",
+			"content",
+			"toog",
+			"tog",
+			"toggle",
+			"navto",
+			"icon",
+			"200",
+			"titolo-a",
+			"row",
+			"before",
+			"post-meta"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"40"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Jolly jumper/jollyjumper.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								889,
+								889
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Cobalt.tmTheme",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Taglialegna/taglialegna.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Cobalt.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Nonna/nonna.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Cobalt.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 25.0
+	},
+	"project": "algoritmi.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
