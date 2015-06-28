@@ -43,7 +43,7 @@
 #define ALLOC(type, length) (type*) malloc(sizeof(type) * (length))
 #define REALLOC(who, type, length) who = (type*) realloc(who, sizeof(type) * (length))
 
-//#define DEBUG 
+#define DEBUG 
 
 
 //dimensioni del grafo
@@ -88,14 +88,16 @@ int T = 0; //contatore del tempo di visita della DFS
 
 graph_t G;
 graph_lite_t bip;
+int *CCS;
+int N_CCS;
 int *map;
 int consiglieri = 0;
 int counter = 0;
 stack<int> S;
 int found_CCS = 0;
 
-graph_lite_t create_bipartition(int *CCS, int n);
-int maximum_match(int *CCS, int n);
+graph_lite_t create_bipartition();
+int maximum_match();
 
 void print_tree() {
     #ifdef DEBUG
@@ -187,8 +189,8 @@ int DFS_visit(int u) {
 
     }
 
-    int padre, c=0;
-    int *CCS;
+    int padre;
+    N_CCS=0;
     //controllo le componenti connesse
     if(LOWLINK(u) == COUNTER(u)) {
 
@@ -202,10 +204,10 @@ int DFS_visit(int u) {
 
             w = S.top();
             S.pop();
-            if(c == 0)
+            if(N_CCS == 0)
                 CCS = ALLOC(int, 1);
             else
-                REALLOC(CCS, int, c+1);
+                REALLOC(CCS, int, N_CCS+1);
 
 
             COLOR(w) = RED;
@@ -216,7 +218,7 @@ int DFS_visit(int u) {
             cout << "\t\t" << VERTEX(w) << " is out stack";
             #endif
 
-            if(c == 0)
+            if(N_CCS == 0)
                 padre = P(w);
             if(P(w) != -1)
                 consiglieri++;
@@ -229,14 +231,14 @@ int DFS_visit(int u) {
             if(IN_DEG(w) == 1 && w != u) {
                 P(w) = -1;
             } else {
-                CCS[c]=w;
-                c++;
+                CCS[N_CCS]=w;
+                N_CCS++;
             }
             
 
         } while(w != u);
 
-        if(c == 1) {
+        if(N_CCS == 1) {
             P(u) = padre;
             COLOR(u) = BLACK;
             if(P(u) != -1)
@@ -251,8 +253,8 @@ int DFS_visit(int u) {
                 found_CCS = 1;
                 bip = ALLOC(vertex_lite_t, V+1); //alloco il grafo bipartito
             }
-            create_bipartition(CCS, c);
-            maximum_match(CCS, c);
+            create_bipartition();
+            maximum_match();
             
             free(CCS);
         }
@@ -278,12 +280,12 @@ int DFS_visit(int u) {
     return -1;
 }
 
-bool BFS_max_match(int *CCS, int n){
+bool BFS_max_match(){
     #ifdef DEBUG
     cout << "\t\t\tstart BFS" << endl;
     #endif
     queue<int> q;
-    for(int i; i < n; i++) {
+    for(int i; i < N_CCS; i++) {
         int u = CCS[i];
         if(bip[u].compagno == V) {
             bip[u].dist = 0;
@@ -360,18 +362,18 @@ bool DFS_max_match(int u){
     
 }
 
-int maximum_match(int *CCS, int n) {
+int maximum_match() {
 
     #ifdef DEBUG
     cout << "\t\t------------ calculating maximum match------------" << endl;
     #endif
 
     int matching = 0;
-    while(BFS_max_match(CCS, n)) {
+    while(BFS_max_match()) {
         #ifdef DEBUG
         cout << "\t\tBFS returned true" << endl;
         #endif
-        for(int i = 0; i < n; i++) {
+        for(int i = 0; i < N_CCS; i++) {
             int u = CCS[i];
             #ifdef DEBUG
             cout << "\t\tevalueting " << u << " which is in CCS" << endl;
@@ -386,7 +388,7 @@ int maximum_match(int *CCS, int n) {
             }
         }
     }
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < N_CCS; i++) {
         if(bip[CCS[i]].compagno != V) {
             P(CCS[i]) = bip[CCS[i]].compagno;
             consiglieri--;
@@ -402,7 +404,7 @@ int maximum_match(int *CCS, int n) {
 }
 
 //crea un grafo bipartito con L = CCS e R = possibili padri degli elementi della CCS
-graph_lite_t create_bipartition(int *CCS, int n) {
+graph_lite_t create_bipartition() {
 
     #ifdef DEBUG
     cout << "\t\t------------ creating bipartition------------" << endl;
@@ -416,7 +418,7 @@ graph_lite_t create_bipartition(int *CCS, int n) {
     }
 
     //scorro tutti gli elementi della CCS
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < N_CCS; i++) {
         u = CCS[i];
         
         //scorro tutti gli elementi della lista di incidenza di u (tutti i suoi possibili padri)

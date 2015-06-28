@@ -15,8 +15,9 @@ int min(int n1, int n2) {
     if(n1 > n2) return n2;
     return n1;
 }
+int P[MAXN];
 
-int mangia(int N, int K, int P[]) {
+int mangia(int N, int K) {
     // Mettete qui il codice della soluzione
 
     /*if(N == 0) {
@@ -35,14 +36,14 @@ int mangia(int N, int K, int P[]) {
 
     int si = 0, no = 0, m = 0;
     
-    no = mangia(N-1, K, P);
+    no = mangia(N-1, K);
 
     if(K - P[N-1] < 0) 
       K = 0;
     else
       K -= P[N-1];
 
-    si = mangia(N-1, K, P);
+    si = mangia(N-1, K);
 
     if(P[N-1] < 0) {
       m = INT_MAX;
@@ -57,8 +58,6 @@ int mangia(int N, int K, int P[]) {
     return memo[1][N];
 }
 
-
-int P[MAXN];
 
 int main() {
     FILE *fr, *fw;
@@ -88,7 +87,7 @@ int main() {
     memo[0][0] = 0;
     memo[1][0] = INT_MAX;
 
-    fprintf(fw, "%d\n", mangia(N, K, P));
+    fprintf(fw, "%d\n", mangia(N, K));
     fclose(fr);
     fclose(fw);
     return 0;
